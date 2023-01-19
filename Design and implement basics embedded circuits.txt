@@ -1,0 +1,65 @@
+Aim: Design and implement basics embedded circuits.
+Components:- Siren, HomeGateway, Motion Detector, Door, Smartphone.
+
+Theory:A system designed with the embedding of hardware and software together for a specific function with a larger area is embedded system design. 
+In this Practical Implementing basic Embeded system to perform following task such as Alarm system and Time buzzer etc.
+
+1.Automatic Alarm system-
+Alarm should get trigger by sensor:in this Practical using
+Home Gateway,The main functions of Home Gateway As a physical interface that connects all 
+external access networks to the home and connects the home internal network to the outside.
+In Automatic Alarm system Motion detector detect motion and trigger to Siren when door is open.
+
+2.Timer based buzzer -
+Connecting MCU with Toggle Push Button and MCU with IoT Cables. 
+When we tap on toggle its trigger the alarm and we get indication.
+
+3.Sensor based Counting device - 
+this device count the number of Move your mouse over trip sensor while holding alt. 
+And the output will be displayed on the command line.
+
+Steps:------------------(Part-A)
+
+Step 1: Add all the components in the cisco packet tracer
+
+Step 2: Click on Conditions and Add condition where if 
+Motion Detector on is true and Door Lock is lock then set Siren on to true
+
+Step 3: Click on the component and 
+set its SSID to HomeGateway and IoT Server to HomeGateway
+
+Step 4: All the devices connected to the HomeGateway will be displayed.
+
+Step 5: Make sure Door is locked. Check that in IoT monitor
+
+Step 6: Test the alert by hovering the mouse over 
+the motion detector sensor while holding alt on keyboard. 
+The siren should go off when motion detector senses motion.
+
+Steps:-----------------(Part-B)
+
+2.Timer based buzzer 
+Components:- Toggle Push Button, MCU Board, Alarm, IoT cables. Steps:-
+
+Step 1: Add all the components in the cisco packet tracer
+
+Step 2: Connect MCU with Toggle Push Button and MCU with IoT Cables
+
+Step 3: Click on MCU and then select Programming.
+
+Step 4: Click Run and 
+Push Toggle Button by hovering mouse over it and clicking it with 
+holding alt key on keyboard.
+
+Steps:-------------------(Part-C)
+
+3.Sensor based Counting device Components:- Trip Wire, MCU Board, IoT cables. 
+Steps:-
+
+Step 1: Click MCU board and go to Programming
+
+Step 2: Click on New and write following code and run.
+
+Step 4: Move your mouse over trip sensor while holding alt. 
+And the output will be displayed on the command line.
+

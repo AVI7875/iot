@@ -1,0 +1,62 @@
+Aim: Develop an IoT application for monitoring water levels in tanks and automatically start the motor to fill 
+the tank if the level goes below the critical level
+
+
+STEPS -
+1)CREATE THE TOPOLOGY.
+2PROGRAM THE MCU.
+3) CHECK THE OUTPUT. CREATE THE TOPOLOGY -
+
+1.
+Place a Water Sensor, an MCU board, and a Motor as shown in the figure.
+
+2.
+Place a Water Level Monitor and a Lawn sprinkler in order to make the understanding and functionality easier.
+
+Create a rectangle that represents the Water Tank.
+
+PROGRAM THE MCU - 
+1.
+Click on the MCU and go to Programming > New and create a new Python Script called ‘ Water Monitor ‘.
+
+Write the following code in the main.py file - 4.
+
+Code:---------------
+
+"""WATER LEVEL MONITORING SYSTEM"""
+from gpio import *
+#provides the analogRead and digitalWrite method from time import * #provides the sleep method
+
+
+while True:
+water_level=analogRead(A0)
+#reads the analog input from the water sensor at pin A0 if water_level<400:
+digitalWrite(A1,HIGH) #starts the motor at pin A1 else: digitalWrite(A1,LOW)
+#stops the motor at pin A1
+sleep(0.3)
+
+
+"""WATER LEVEL MONITORING SYSTEM"""
+from gpio import *
+#provides the analogRead and digitalWrite method from time import *
+#provides the sleep method
+
+while True:
+water_level=analogRead(A0)#reads the analog input from the water sensor at pin A0
+if water_level<400:
+digitalWrite(A1,HIGH)#starts the motor at pin A1 else:
+digitalWrite(A1,LOW)#stops the motor at pin A1
+sleep(0.3)
+
+
+CHECK THE OUTPUT -
+
+1.
+Run the main.py file and observe the motor. It moves when the water level is low to allow the tank to fill up.
+
+Press the Alt key on your keyboard and click on the Lawn Sprinkler to start it. This will gradually increase the water level and as soon as the water level crosses the given threshold the Motor stops rotating.
+
+Note - We use the Lawn Sprinkler to regulate the water level correctly. This can be done in other applications without a sprinkler. We use the Water Level Monitor to ensure that the level is not 0.
+
+
+

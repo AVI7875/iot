@@ -1,0 +1,61 @@
+Aim: Develop an IoT module to which measure the intensity of light and send the same to your PC/ Phone.
+
+Apparatus:
+
+Arduino UNO R3:
+Arduino UNO is a low-cost, flexible, and easy-to-use programmable open-source microcontroller board that can be integrated into a variety of electronic projects. Arduino UNO features AVR microcontroller Atmega328, 6 analogue input pins, and 14 digital I/O pins out of which 6 are used as PWM output.
+
+Photoresistor/LDR:
+
+Photoresistors are also sometimes referred as LDR (Light Dependent Resistor), semiconductor photoresistor, photoconductor, or photocell. Photoresistor changes its resistance only when it is exposed to light. In other words, the flow of electric current through the photoresistor increases when the intensity of light increases
+
+Resistor(MINRES1K):
+The main purpose of resistor is to reduce the current flow and to lower the voltage in any particular portion of the circuit.
+
+Steps to perform the practical in Proteus Software:-----------
+
+Prerequisites:
+1.	Proteus software should be downloaded and installed.
+2.	Arduino IDE should be downloaded and installed
+3.	Permissions should be provided to the user for accessing the libraries. 4. Two libraries to add in Library folder for Arduino UNO R3
+Library link: 
+
+Follow the steps to setup the circuit:
+
+1. Open the proteus software and create a new project with default settings. 2. Once the project is created click on component mode in the left pane. 3. Click on p(pick device) and search for the components
+4. Search for the UNO R3 and double click on that it will be added to components list. 5. Now search for LDR and double click on that to add
+6. Now search for Resistor MINRES1K and add that to component list. 7. Click on ARDUINO UNO R3 and place it into the simulating area
+8.	Similarly add LDR and MINRES1K resistor
+9.	Now click on Generators in the left pane and select DC add it to simulating area 10. Similarly add Ground from the left pane in terminals
+11.	Connect the DC to first terminal of LDR
+12.	The second terminal of LDR will go to Analog A0 and first terminal of resistor. 13. Lastly second terminal of resistor will connect to the ground.
+14.	To pass the current through the circuit we have to provide some power so we will add the voltage from DC.
+15.	Double click on DC and enter voltage of your preference (example: 5) 16. To display the intensity, we need a monitor and for that we will add Virtual terminal 17. From the left pane click on instrument and select virtual terminal and add to the simulating area.
+18.	Now connect the RXD of terminal to PD1/TXD 1 in the Arduino and TXD t0 PD0/RXD 0 Your circuit should look like this:
+
+19.	Now open the Arduino IDE and write the following code
+
+
+void setup()
+{
+Serial.begin(9600);
+}
+
+void loop()
+{
+intensity = analogRead(A0); Serial.println(intensity);
+}
+
+
+20.	To generate the binary file first we will compile the code.
+21.	Click on Sketch at the top menu bar and click on Verify Compile
+22.	If it asks for folder path provide a suitable path which you will remember 23. Then again click on Sketch and click on Export Compiled Binary
+24.	The .hex extension file will be generated at specified path.
+25.	Now in Proteus software double click on Arduino, edit component window will be displayed.
+26.	Click on browse for Program files and select the file with .hex extension which we just generated and click on open.
+27.	After clicking on Ok our entire setup and coding part is completed 28. Now run the simulator by clicking on the play button.
+29.	To control the intensity of light we can use the + - buttons besides the LDR 30. In the Virtual Monitor output as Intensity will be displayed.
+30.	In the Virtual Monitor output as Intensity will be displayed.
+
+
+

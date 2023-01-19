@@ -1,0 +1,18 @@
+Aim: Develop an IoT application for Motion detection 
+
+Components:- Home Gateway, Motion Detector, Fan, Smartphone.
+
+Step 1: Add all the components in the cisco packet tracer, give proper names to each component and arrange as shown in below figure.
+Theory:The concept as shown below is to allow monitoring detect motion and by detecting motion remotely we can handel home appliance (here we apply on fan as example) with the additional capability to detect motion if someone is at home, and also allow switch system via smartphone
+
+Step 2: to connect the fan with home gateway, click on the fan go to config tab, click on advanced option and select PT-IOT-NM-1W in network adapter in I/O config tab as shown below.
+
+Step 3: Select SSID of fan to be HomeGateway. The fan will be connected to home gateway.
+
+Step 4: do the same settings for motion detector as well. It will also get connected to home gateway. 
+Step 5: In smart phone, wireless tab put SSID as HomeGateway. It will get connected to home gateway. 
+Step 6: In smart phone, go to IoT monitor and set following conditions.
+
+Step 7 : To execute the practical, click Alt+mouse over on motion detector, fan will switch on with high speed.
+When we remove alt+ mouse over from motion detector, it will switch off the fan.
+

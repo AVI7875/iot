@@ -1,0 +1,26 @@
+AIM: Demonstrate communication between two embedded devices using UART port
+
+STEPS TO PERFORM THIS PRACTICAL:
+1.Click on pick device icon and select the following
+
+2.Now click on instruments and select virtual terminal.
+
+3.Now connect Arduino and virtual terminal the topology will look like this
+
+4.Now open Arduino idle and do the following: Click on file menu examples 
+Basic DigitalReadSerial
+It will open up the code
+
+Now run this program
+And in output it will give .hex file location copy that path
+Note: if .hex path is not shown then click on file preferences and 
+select the compile and upload checkboxes and click on ok and re run the code
+
+5.Now in Proteus click on Arduino and in program files paste the .hex file-path
+
+6.OUTPUT:
+Now click on play button this will give u an 
+output ie we are connecting two devices on UART port
+
+
+

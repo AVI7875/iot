@@ -1,0 +1,28 @@
+AIM: Built an IoT system to send ticket before entering the bus
+
+1-	We have to create front door, which is used whenever the passenger traveling in bus is boarding the bus to reach the destination place.
+Components used for this part is
+●	MCU Board
+●	Door
+●	RFID Reader
+●	LCD Display
+●	Home gateway
+●	PC
+●	RFID card
+
+If the person is using the front door that means the person have to pay for the ticket, without which he/she couldn’t have entered inside the bus hence coding for this part is simple.
+
+Connect LCD display to MCU board using digital port “D0”. Connect RFID Reader to MCU board using Analog port “A1”. Connections to MCU board should be done using IOT CUSTOM CABLE ONLY
+Connect RFID Reader Wirelessly to HomeGateway. Connect Door to HomeGateway Wirelessly.
+Connect PC also to HomeGateway
+
+Now on MCU board type the following code:
+
+run the code.
+Now whenever the RFID card is scanned on RFID reader the signal will be given to HomeGateway by RFID reader that card is Scanned and it check the conditions mentioned on server of HomeGateway for what has to be performed i.e it will open the front door and display Success message on LCD Display.
+Open the RFID reader programming part and make the following changes in loop function of main.py
+
+run the code.
+
+now create conditions in PC for opening the door, once you pay the ticket via RFID
+

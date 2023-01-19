@@ -1,0 +1,32 @@
+Aim : -Develop an IoT application that will raise an alarm whenever with going to rain outside based on 
+the weather prediction data
+
+Components required:-
+LCD, MCU board, humiture sensor
+
+Theory: -
+Humidity is the concentration of water vapour present in the air. 
+Water vapor, the gaseous state of water, is generally invisible to the human eye. Humidity indicates the likelihood for precipitation, 
+dew, or fog to be present. Humidity depends on the temperature and pressure of the system of interest.
+
+Humidity value : - when the relative humidity is greater than about 70%. 
+Rain. Often, rain will be falling from clouds where the humidity is 100% into air with a lower humidity. 
+For example, it can rain at a ground humidity of 60%, but over time, the humidity will increase.
+
+
+Steps:-
+Take the components and arrange as shown in diagram
+
+Code:
+
+function getSensorData(){
+return Math.floor(map(analogRead(A0), 0, 1023, 0, 100) + 0.5);
+}
+
+function setup() { attachInterrupt(A0, function() { processData(getSensorData());
+});
+}
+
+function processData(data) { customWrite(0, data);
+}
+

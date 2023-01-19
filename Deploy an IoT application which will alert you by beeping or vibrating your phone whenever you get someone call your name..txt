@@ -1,0 +1,32 @@
+Aim: Deploy an IoT application which will alert you by beeping or vibrating your phone whenever you get someone call your name.
+
+Theory:
+Vibration can be defined as the mechanical oscillation about an 
+equilibrium position of a machine or component or simply the back and 
+forth motion of a machine or component.
+
+
+Ground:
+
+Grounding something simply means connecting it to ground. 
+And in electronics, ground is just a name we give to a certain point in 
+the circuit. For example, in a circuit with one battery 
+(with a positive and a negative terminal), 
+we usually refer to the negative terminal as ground.
+
+Buzz:
+The 8 Channel Quiz Buzzer Circuit using Microcontroller is a 
+simple embedded system with a set of 8 push buttons being the input devices, 
+a microcontroller as 
+the main controller and the output devices being a buzzer and a display.
+
+VCC:
+VCC - The first choice for innovative, experiential learning for life. 
+VCC is proud to inspire a new generation of students to discover their passions, 
+gain essential skills, 
+and learn what it takes to succeed in a competitive workforce
+
+Vibration Sensor:
+
+Vibration sensors are piezoelectric accelerometers that sense vibration. 
+They are used for measuring fluctuating accelerations or speeds or for normal vibration measurement.
